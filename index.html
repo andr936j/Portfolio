@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Index - Andreas Stephensen</title>
+    <link rel="stylesheet" href="portfolio.css">
+     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="cv.html">CV</a>
+            <a href="tema1.html">Tema 01 - Grundlæggende HTML</a>
+            <a href="tema3.html">Tema 03 - Grundlæggende video</a>
+            <a href="tema2.html">Tema 02 - Animation</a>
+            <a href="tema4.html">Tema 04 - Grundlæggende UX</a>
+        </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">
+
+<div class="div"></div>
+<div class="div"></div>
+<div class="div"></div>
+
+    </span>
+
+    <div class="video"><video autoplay loop muted id="video-bg">
+        <source src="cateyelowcomp.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="logo">
+
+        <h2>Andreas' portfolio</h2>
+
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
+
+</body>
+
+</html>

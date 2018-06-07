@@ -1,0 +1,42 @@
+#dog_container {
+    position: absolute;
+}
+
+.dog_walk_left {
+    animation-name: dog_walk_left_kf;
+    animation-duration: 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#dog_sprite {
+    width: 10vw;
+    height: 6.66vw;
+    background-image: url(dogsprite.svg);
+    background-size: 1200% 100%;
+}
+
+.dog_walkcycle {
+    animation-name: dog_walkcycle_kf;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+}
+
+@keyframes dog_walkcycle_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1200% 0%;
+    }
+}
+
+@keyframes dog_walk_left_kf {
+    0% {
+        right: -10vw;
+    }
+    100% {
+        right: 110vw;
+    }
+}
