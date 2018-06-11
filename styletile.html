@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Styletile - Andreas Stephensen</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="videoo"><video autoplay loop muted id="video-bg">
+        <source src="cateyelowcomp.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Forside</a>
+            <a href="tema1.html">Tema 01 - Grundlæggende HTML</a>
+            <a href="tema3.html">Tema 03 - Grundlæggende video</a>
+            <a href="tema2.html">Tema 02 - Animation</a>
+            <a href="tema4.html">Tema 04 - Grundlæggende UX</a>
+            <a href="cv.html">CV</a>
+        </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">
+
+<div class="div"></div>
+<div class="div"></div>
+<div class="div"></div>
+
+    </span>
+
+    <div class="sectionwrapper2">
+
+        <div class="column2">
+
+            <h1>Styletile</h1>
+
+            <h1>h1 - Overskrifter</h1>
+            <p>font-family: 'Source Code Pro', monospace<br> color: #A46499</p><br>
+
+            <h2>h2 - Forside tekst</h2>
+            <p>font-family: 'Source Code Pro', monospace<br> font-size: 6.4em<br> color: #A46499</p><br>
+
+            <h3>h3 - Underoverskrifter</h3>
+            <p>font-family: 'Open Sans', sans-serif</p><br>
+
+            <p>paragraphs - brødtekst</p>
+            <p>font-family: 'Open Sans', sans-serif</p><br><br>
+
+            <footer>footer</footer>
+            <p>font-family: 'Open Sans', sans-serif<br> font-size: 0.6em;</p><br>
+
+
+
+
+            <section id="farvepalette">
+
+                <h1>Farvepalette</h1>
+
+                <div class="colors">
+
+                    <div class="color color1">#37572D</div>
+
+                    <div class="color color2">#BBF0AB</div>
+
+                    <div class="color color3">#73A464</div>
+
+                    <div class="color color4">#57244F</div>
+
+                    <div class="color color5">#A46499</div>
+
+                </div>
+
+            </section>
+
+            <br>
+
+            <img src="cateyecolorwheel.png" alt="Close-up-billede af et katteøje">
+            <p>Dette billede er brugt til at udregne farver og komplementærfarver i Adobe Color Wheel.</p>
+
+        </div>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
+
+    <footer>
+        <p>Andreas Stephensen, Københavns Erhvervsakademi, 2018.</p>
+    </footer>
+
+</body>
+
+</html>

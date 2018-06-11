@@ -1,19 +1,27 @@
+.MyNav {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 video {
     width: 100%;
 }
 
 h1 {
     font-family: 'Source Code Pro', monospace;
-    color: #3fba67;
+    color: #A46499;
 }
 
 h2 {
     font-family: 'Source Code Pro', monospace;
     font-size: 6.4em;
-    color: #3fba67;
-/*    text-shadow: 1px 1px #000000;;  */
+    color: #A46499;
     margin-top: 0vw;
-    margin-left: 2vw;
+    margin-left: 4vw;
+
 }
 
 h3 {
@@ -26,6 +34,7 @@ p {
 
 footer {
     font-size: 0.6em;
+    text-align: right;
 }
 
 .video {
@@ -90,7 +99,7 @@ footer {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #3fba67;
+    color: #A46499;
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;
@@ -101,7 +110,7 @@ footer {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #6cfa9b;
+    color: #ffffff;
 }
 
 /* Position the close button (top right corner) */
@@ -115,42 +124,6 @@ footer {
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 11%;
-
-}
-
-.column {
-    flex-basis: 400px;
-    flex-grow: 1;
-    margin: 80px 10px 10px 10px;
-}
-
-.column_wide {
-    flex-basis: 400px;
-    flex-grow: 3;
-}
-
-.column_narrow {
-    flex-basis: 400px;
-    flex-grow: 1;
-}
-
-#cv .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 10px 10px 10px;
-    padding: 0px;
-
-}
-
-#cv .column {
-    flex-grow: 1;
-    flex-basis: 200px;
-}
-
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
@@ -162,11 +135,96 @@ footer {
     }
 }
 
+.overlay .closewbtn .dropbtn {
+    cursor: pointer;
+}
+
+
+a:link {
+    color: #A46499;
+}
+
+/* visited link */
+
+a:visited {
+    color: #A46499;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #A46499;
+}
+
+/* selected link */
+
+a:active {
+    color: #A46499;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 11%;
+}
+
+.column {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 80px 10px 10px 10px;
+}
+
+.sectionwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 11%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column1 {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 80px 10px 10px 10px;
+    width: 400px;
+}
+
+.sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 11%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column2 {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 80px 10px 10px 10px;
+    width: 400px;
+}
+
+.sectionwrapper2 h2 {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.sectionwrapper2 footer {
+    text-align: left;
+}
+
 .div {
     width: 40px;
     height: 5px;
-    background-color: #3fba67;
+    background-color: #A46499;
     margin: 6px 0;
+    cursor: pointer;
+}
+
+.burger {
+    cursor: pointer;
 }
 
 #dog_container {
@@ -205,9 +263,121 @@ footer {
 
 @keyframes dog_walk_left_kf {
     0% {
-        right: -30vw;
+        right: -20vw;
     }
     100% {
         right: 110vw;
     }
+}
+
+
+#farvepalette .colors {
+    display: flex;
+    justify-content: space-between;
+}
+
+#farvepalette .color {
+
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+}
+
+#farvepalette .color1 {
+    background-color: #37572D;
+}
+
+#farvepalette .color2 {
+    background-color: #BBF0AB;
+}
+
+#farvepalette .color3 {
+    background-color: #73A464;
+}
+
+#farvepalette .color4 {
+    background-color: #57244F;
+}
+
+#farvepalette .color5 {
+    background-color: #A46499;
+}
+
+
+@media only screen and (min-width: 320px) {
+    h2 {
+        font-size: 1.4em;
+    }
+    .videoo {
+    z-index: -10;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    position: absolute;
+    top: -4%;
+    left: 0;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+     h2 {
+        font-size: 2em;
+    }
+    .videoo {
+    z-index: -10;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    position: absolute;
+    top: -10%;
+    left: 0;
+}
+}
+
+@media only screen and (min-width: 768px) {
+     h2 {
+        font-size: 3em;
+    }
+    .videoo {
+    z-index: -10;
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+    position: absolute;
+    top: -24%;
+    left: 0;
+}
+}
+
+
+@media only screen and (min-width: 1000px) {
+     h2 {
+        font-size: 4em;
+    }
+    .videoo {
+    z-index: -10;
+    width: 100%;
+    height: 64%;
+    overflow: hidden;
+    position: absolute;
+    top: -38%;
+    left: 0;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+     h2 {
+        font-size: 6.4em;
+    }
+    .videoo {
+    z-index: -10;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: absolute;
+    top: -40%;
+    left: 0;
+}
 }
